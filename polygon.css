@@ -1,0 +1,3249 @@
+.polygon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.polygon svg {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.polygon:before {
+    content: '';
+    position: absolute;
+    width: 80vw;
+    height: 80vw;
+    max-width: 500px;
+    max-height: 500px;
+    background: #fc7f0c;
+    z-index: -1;
+}
+
+.polygon .wrap {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    position: relative;
+    overflow: hidden;
+    filter: url(#goo);
+}
+
+.polygon .wrap .cell {
+    position: relative;
+}
+
+.polygon .wrap .cell:nth-of-type(1) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(1) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(1) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(1) .inner.class2, .polygon .wrap .cell:nth-of-type(1) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(1) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(2) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(2) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(2) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(2) .inner.class2, .polygon .wrap .cell:nth-of-type(2) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(2) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(3) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(3) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(3) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(3) .inner.class2, .polygon .wrap .cell:nth-of-type(3) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(3) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(4) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(4) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(4) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(4) .inner.class2, .polygon .wrap .cell:nth-of-type(4) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(4) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(5) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(5) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(5) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(5) .inner.class2, .polygon .wrap .cell:nth-of-type(5) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(5) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(6) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(6) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(6) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(6) .inner.class2, .polygon .wrap .cell:nth-of-type(6) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(6) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(7) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(7) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(7) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(7) .inner.class2, .polygon .wrap .cell:nth-of-type(7) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(7) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(8) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(8) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(8) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(8) .inner.class2, .polygon .wrap .cell:nth-of-type(8) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(8) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(9) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(9) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(9) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(9) .inner.class2, .polygon .wrap .cell:nth-of-type(9) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(9) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(10) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(10) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(10) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(10) .inner.class2, .polygon .wrap .cell:nth-of-type(10) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(10) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(11) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(11) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(11) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(11) .inner.class2, .polygon .wrap .cell:nth-of-type(11) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(11) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(12) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(12) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(12) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(12) .inner.class2, .polygon .wrap .cell:nth-of-type(12) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(12) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(13) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(13) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(13) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(13) .inner.class2, .polygon .wrap .cell:nth-of-type(13) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(13) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(14) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(14) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(14) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(14) .inner.class2, .polygon .wrap .cell:nth-of-type(14) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(14) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(15) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(15) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(15) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(15) .inner.class2, .polygon .wrap .cell:nth-of-type(15) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(15) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(16) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(16) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(16) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(16) .inner.class2, .polygon .wrap .cell:nth-of-type(16) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(16) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(17) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(17) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(17) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(17) .inner.class2, .polygon .wrap .cell:nth-of-type(17) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(17) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(18) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(18) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(18) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(18) .inner.class2, .polygon .wrap .cell:nth-of-type(18) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(18) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(19) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(19) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(19) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(19) .inner.class2, .polygon .wrap .cell:nth-of-type(19) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(19) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(20) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(20) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(20) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(20) .inner.class2, .polygon .wrap .cell:nth-of-type(20) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(20) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(21) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(21) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(21) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(21) .inner.class2, .polygon .wrap .cell:nth-of-type(21) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(21) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(22) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(22) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(22) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(22) .inner.class2, .polygon .wrap .cell:nth-of-type(22) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(22) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(23) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(23) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(23) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(23) .inner.class2, .polygon .wrap .cell:nth-of-type(23) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(23) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(24) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(24) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(24) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(24) .inner.class2, .polygon .wrap .cell:nth-of-type(24) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(24) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(25) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(25) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(25) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(25) .inner.class2, .polygon .wrap .cell:nth-of-type(25) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(25) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(26) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(26) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(26) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(26) .inner.class2, .polygon .wrap .cell:nth-of-type(26) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(26) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(27) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(27) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(27) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(27) .inner.class2, .polygon .wrap .cell:nth-of-type(27) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(27) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(28) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(28) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(28) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(28) .inner.class2, .polygon .wrap .cell:nth-of-type(28) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(28) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(29) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(29) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(29) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(29) .inner.class2, .polygon .wrap .cell:nth-of-type(29) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(29) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(30) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(30) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(30) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(30) .inner.class2, .polygon .wrap .cell:nth-of-type(30) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(30) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(31) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(31) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(31) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(31) .inner.class2, .polygon .wrap .cell:nth-of-type(31) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(31) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(32) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(32) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(32) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(32) .inner.class2, .polygon .wrap .cell:nth-of-type(32) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(32) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(33) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(33) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(33) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(33) .inner.class2, .polygon .wrap .cell:nth-of-type(33) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(33) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(34) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(34) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(34) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(34) .inner.class2, .polygon .wrap .cell:nth-of-type(34) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(34) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(35) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(35) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(35) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(35) .inner.class2, .polygon .wrap .cell:nth-of-type(35) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(35) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(36) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(36) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(36) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(36) .inner.class2, .polygon .wrap .cell:nth-of-type(36) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(36) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(37) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(37) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(37) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(37) .inner.class2, .polygon .wrap .cell:nth-of-type(37) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(37) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(38) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(38) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(38) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(38) .inner.class2, .polygon .wrap .cell:nth-of-type(38) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(38) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(39) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(39) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(39) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(39) .inner.class2, .polygon .wrap .cell:nth-of-type(39) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(39) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(40) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(40) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(40) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(40) .inner.class2, .polygon .wrap .cell:nth-of-type(40) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(40) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(41) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(41) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(41) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(41) .inner.class2, .polygon .wrap .cell:nth-of-type(41) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(41) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(42) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(42) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(42) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(42) .inner.class2, .polygon .wrap .cell:nth-of-type(42) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(42) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(43) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(43) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(43) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(43) .inner.class2, .polygon .wrap .cell:nth-of-type(43) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(43) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(44) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(44) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(44) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(44) .inner.class2, .polygon .wrap .cell:nth-of-type(44) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(44) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(45) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(45) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(45) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(45) .inner.class2, .polygon .wrap .cell:nth-of-type(45) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(45) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(46) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(46) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(46) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(46) .inner.class2, .polygon .wrap .cell:nth-of-type(46) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(46) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(47) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(47) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(47) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(47) .inner.class2, .polygon .wrap .cell:nth-of-type(47) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(47) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(48) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(48) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(48) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(48) .inner.class2, .polygon .wrap .cell:nth-of-type(48) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(48) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(49) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(49) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(49) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(49) .inner.class2, .polygon .wrap .cell:nth-of-type(49) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(49) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(50) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(50) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(50) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(50) .inner.class2, .polygon .wrap .cell:nth-of-type(50) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(50) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(51) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(51) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(51) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(51) .inner.class2, .polygon .wrap .cell:nth-of-type(51) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(51) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(52) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(52) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(52) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(52) .inner.class2, .polygon .wrap .cell:nth-of-type(52) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(52) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(53) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(53) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(53) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(53) .inner.class2, .polygon .wrap .cell:nth-of-type(53) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(53) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(54) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(54) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(54) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(54) .inner.class2, .polygon .wrap .cell:nth-of-type(54) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(54) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(55) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(55) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(55) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(55) .inner.class2, .polygon .wrap .cell:nth-of-type(55) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(55) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(56) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(56) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(56) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(56) .inner.class2, .polygon .wrap .cell:nth-of-type(56) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(56) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(57) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(57) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(57) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(57) .inner.class2, .polygon .wrap .cell:nth-of-type(57) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(57) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(58) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(58) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(58) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(58) .inner.class2, .polygon .wrap .cell:nth-of-type(58) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(58) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(59) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(59) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(59) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(59) .inner.class2, .polygon .wrap .cell:nth-of-type(59) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(59) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(60) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(60) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(60) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(60) .inner.class2, .polygon .wrap .cell:nth-of-type(60) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(60) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(61) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(61) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(61) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(61) .inner.class2, .polygon .wrap .cell:nth-of-type(61) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(61) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(62) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(62) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(62) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(62) .inner.class2, .polygon .wrap .cell:nth-of-type(62) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(62) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(63) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(63) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(63) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(63) .inner.class2, .polygon .wrap .cell:nth-of-type(63) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(63) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(64) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(64) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(64) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(64) .inner.class2, .polygon .wrap .cell:nth-of-type(64) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(64) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(65) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(65) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(65) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(65) .inner.class2, .polygon .wrap .cell:nth-of-type(65) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(65) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(66) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(66) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(66) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(66) .inner.class2, .polygon .wrap .cell:nth-of-type(66) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(66) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(67) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(67) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(67) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(67) .inner.class2, .polygon .wrap .cell:nth-of-type(67) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(67) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(68) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(68) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(68) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(68) .inner.class2, .polygon .wrap .cell:nth-of-type(68) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(68) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(69) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(69) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(69) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(69) .inner.class2, .polygon .wrap .cell:nth-of-type(69) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(69) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(70) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(70) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(70) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(70) .inner.class2, .polygon .wrap .cell:nth-of-type(70) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(70) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(71) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(71) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(71) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(71) .inner.class2, .polygon .wrap .cell:nth-of-type(71) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(71) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(72) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(72) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(72) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(72) .inner.class2, .polygon .wrap .cell:nth-of-type(72) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(72) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(73) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(73) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(73) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(73) .inner.class2, .polygon .wrap .cell:nth-of-type(73) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(73) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(74) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(74) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(74) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(74) .inner.class2, .polygon .wrap .cell:nth-of-type(74) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(74) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(75) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(75) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(75) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(75) .inner.class2, .polygon .wrap .cell:nth-of-type(75) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(75) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(76) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(76) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(76) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(76) .inner.class2, .polygon .wrap .cell:nth-of-type(76) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(76) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(77) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(77) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(77) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(77) .inner.class2, .polygon .wrap .cell:nth-of-type(77) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(77) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(78) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(78) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(78) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(78) .inner.class2, .polygon .wrap .cell:nth-of-type(78) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(78) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(79) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(79) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(79) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(79) .inner.class2, .polygon .wrap .cell:nth-of-type(79) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(79) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(80) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(80) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(80) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(80) .inner.class2, .polygon .wrap .cell:nth-of-type(80) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(80) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(81) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(81) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(81) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(81) .inner.class2, .polygon .wrap .cell:nth-of-type(81) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(81) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(82) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(82) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(82) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(82) .inner.class2, .polygon .wrap .cell:nth-of-type(82) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(82) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(83) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(83) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(83) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(83) .inner.class2, .polygon .wrap .cell:nth-of-type(83) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(83) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(84) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(84) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(84) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(84) .inner.class2, .polygon .wrap .cell:nth-of-type(84) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(84) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(85) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(85) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(85) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(85) .inner.class2, .polygon .wrap .cell:nth-of-type(85) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(85) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(86) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(86) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(86) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(86) .inner.class2, .polygon .wrap .cell:nth-of-type(86) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(86) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(87) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(87) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(87) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(87) .inner.class2, .polygon .wrap .cell:nth-of-type(87) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(87) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(88) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(88) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(88) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(88) .inner.class2, .polygon .wrap .cell:nth-of-type(88) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(88) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(89) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(89) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(89) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(89) .inner.class2, .polygon .wrap .cell:nth-of-type(89) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(89) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(90) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(90) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(90) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(90) .inner.class2, .polygon .wrap .cell:nth-of-type(90) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(90) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(91) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(91) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(91) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(91) .inner.class2, .polygon .wrap .cell:nth-of-type(91) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(91) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(92) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(92) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(92) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(92) .inner.class2, .polygon .wrap .cell:nth-of-type(92) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(92) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(93) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(93) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(93) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(93) .inner.class2, .polygon .wrap .cell:nth-of-type(93) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(93) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(94) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(94) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(94) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(94) .inner.class2, .polygon .wrap .cell:nth-of-type(94) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(94) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(95) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(95) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(95) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(95) .inner.class2, .polygon .wrap .cell:nth-of-type(95) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(95) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(96) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(96) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(96) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(96) .inner.class2, .polygon .wrap .cell:nth-of-type(96) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(96) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(97) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(97) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(97) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(97) .inner.class2, .polygon .wrap .cell:nth-of-type(97) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(97) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(98) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(98) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(98) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(98) .inner.class2, .polygon .wrap .cell:nth-of-type(98) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(98) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(99) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(99) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(99) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(99) .inner.class2, .polygon .wrap .cell:nth-of-type(99) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(99) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell:nth-of-type(100) .inner {
+    width: var(--size);
+    height: var(--size);
+    left: calc((var(--size) / -2) + 50%);
+    top: calc((var(--size) / -2) + 50%);
+    background: #fff;
+    background: var(--color1);
+    mix-blend-mode: hard-light;
+    transform: rotate(var(--angle));
+    border-radius: 0 0 var(--radius) 0;
+    transition: 0.2s ease-in-out;
+}
+
+.polygon .wrap .cell:nth-of-type(100) .inner.class3 {
+    background: linear-gradient(45deg, var(--color1) 50%, transparent 50%);
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(100) .inner.class4 {
+    border-radius: 500%;
+}
+
+.polygon .wrap .cell:nth-of-type(100) .inner.class2, .polygon .wrap .cell:nth-of-type(100) .inner.class1 {
+    background: radial-gradient(circle at center, var(--color1) 1px, transparent 1px, transparent 5px), var(--color2);
+    background-size: 10px 10px;
+    box-shadow: none;
+}
+
+.polygon .wrap .cell:nth-of-type(100) .inner.class5 {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygon .wrap .cell .inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
