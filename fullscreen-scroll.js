@@ -36,7 +36,7 @@ function handleMouseWheel(e) {
         return;
     }
     goto(index);
-    if (index === 2) {
+    if (index === 1) {
         showTech();
     } else {
         hideTech();
